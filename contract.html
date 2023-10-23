@@ -4,35 +4,21 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Investment Contract</h1>
+    <h1>Payment Details</h1>
     <div>
-        <h2>Investment Summary</h2>
+        <h2>Your Bank Details</h2>
+        <p>Bank Name: Nedbank</p>
+        <p>Account Number: 1236268857</p>
+
+        <h2>Make a Deposit</h2>
+        <p>Please make a deposit to the provided account number to complete your investment.</p>
         <p>Investment Amount: $<span id="investmentAmountPlaceholder"></span></p>
-        <p>Desired Return (%): <span id="desiredReturnPlaceholder"></span></p>
-        <p>Return Frequency: <span id="returnFrequencyPlaceholder"></span></p>
         
-        <h2>Banking Details</h2>
-        <p>Please provide your banking details below for return payments:</p>
-        <form>
-            <label for="bankName">Bank Name:</label>
-            <input type="text" id="bankName"><br>
-
-            <label for="accountNumber">Account Number:</label>
-            <input type="text" id="accountNumber"><br>
-
-            <label for="routingNumber">Routing Number:</label>
-            <input type="text" id="routingNumber"><br>
-
-            <label for="accountHolderName">Account Holder Name:</label>
-            <input type="text" id="accountHolderName"><br>
-
-            <label for="firstPaymentDate">First Payment Date:</label>
-            <input type="date" id="firstPaymentDate" disabled><br>
-
-            <button onclick="submitContract()">Submit</button>
-        </form>
+        <h2>Contact Information</h2>
+        <p>For any inquiries or to confirm your deposit, contact us at your@email.com.</p>
+        
+        <button onclick="donePayment()">Done</button>
     </div>
-    <a href="payment.html">Next</a>
 </body>
 <script src="script.js"></script>
 </html>
