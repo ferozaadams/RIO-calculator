@@ -6,21 +6,21 @@
 <body>
     <h1>ROI Calculator</h1>
     <div>
-        <label for="investmentAmount">Investment Amount:</label>
-        <input type="number" id="investmentAmount"><br>
+        <label for="investmentAmountInput">Investment Amount:</label>
+        <input type="number" id="investmentAmountInput"><br>
 
-        <label for="desiredReturn">Desired Return (%):</label>
-        <input type="number" id="desiredReturn"><br>
+        <label for="desiredReturnInput">Desired Return (%):</label>
+        <input type="number" id="desiredReturnInput"><br>
 
-        <label for="returnFrequency">Return Frequency:</label>
-        <select id="returnFrequency">
+        <label for="returnFrequencyInput">Return Frequency:</label>
+        <select id="returnFrequencyInput">
             <option value="weekly">Every Week</option>
             <option value="bi-weekly">Every 2 Weeks</option>
             <option value="monthly">Every Month</option>
         </select><br>
 
-        <label for="returnDay">Return Day:</label>
-        <input type="number" id="returnDay" placeholder="Enter day (1-31)"><br>
+        <label for="returnDayInput">Return Day:</label>
+        <input type="number" id="returnDayInput" placeholder="Enter day (1-31)"><br>
 
         <button onclick="calculateROI()">Calculate</button>
     </div>
