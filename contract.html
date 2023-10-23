@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Investment Contract</h1>
+    <div>
+        <h2>Investment Summary</h2>
+        <p>Investment Amount: $<span id="investmentAmountPlaceholder"></span></p>
+        <p>Desired Return (%): <span id="desiredReturnPlaceholder"></span></p>
+        <p>Return Frequency: <span id="returnFrequencyPlaceholder"></span></p>
+        
+        <h2>Banking Details</h2>
+        <p>Please provide your banking details below for return payments:</p>
+        <form>
+            <label for="bankName">Bank Name:</label>
+            <input type="text" id="bankName"><br>
+
+            <label for="accountNumber">Account Number:</label>
+            <input type="text" id="accountNumber"><br>
+
+            <label for="routingNumber">Routing Number:</label>
+            <input type="text" id="routingNumber"><br>
+
+            <label for="accountHolderName">Account Holder Name:</label>
+            <input type="text" id="accountHolderName"><br>
+
+            <label for="firstPaymentDate">First Payment Date:</label>
+            <input type="date" id="firstPaymentDate"><br>
+
+            <button onclick="submitContract()">Submit</button>
+        </form>
+    </div>
+    <a href="payment.html">Next</a>
+</body>
+<script src="script.js"></script>
+</html>
