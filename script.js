@@ -1,8 +1,9 @@
 function calculateROI() {
     const initialInvestment = parseFloat(document.getElementById('investmentAmount').value);
     const finalValue = parseFloat(document.getElementById('finalValue').value);
+    const duration = parseFloat(document.getElementById('duration').value);
 
-    if (isNaN(initialInvestment) || isNaN(finalValue)) {
+    if (isNaN(initialInvestment) || isNaN(finalValue) || isNaN(duration)) {
         alert('Please enter valid numbers.');
         return;
     }
@@ -16,11 +17,13 @@ function calculateROI() {
 }
 
 function makePayment() {
-    // In a real-world scenario, you would implement a secure payment process here.
-    // For simplicity, let's assume a successful payment and redirect to WhatsApp.
+    const initialInvestment = document.getElementById('investmentAmount').value;
+    const finalValue = document.getElementById('finalValue').value;
+    const duration = document.getElementById('duration').value;
+    const customerName = document.getElementById('customerName').value;
 
     const whatsappNumber = '+27843152270'; // Replace with your WhatsApp number
-    const message = 'I\'m interested in making a payment.';
+    const message = `I'm interested in making a payment. Here are the details:\n\nCustomer Name: ${customerName}\nInitial Investment: $${initialInvestment}\nFinal Value: $${finalValue}\nInvestment Duration: ${duration} years`;
 
     // Construct the WhatsApp URL
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
