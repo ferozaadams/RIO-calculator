@@ -8,6 +8,11 @@ function calculateROI() {
         return;
     }
 
+    if (initialInvestment < 600) {
+        alert('Minimum investment amount is R600.');
+        return;
+    }
+
     const roi = ((finalValue - initialInvestment) / initialInvestment) * 100;
 
     document.getElementById('result').innerText = `Return on Investment: ${roi.toFixed(2)}%`;
@@ -23,7 +28,7 @@ function makePayment() {
     const customerName = document.getElementById('customerName').value;
 
     const whatsappNumber = '+27843152270'; // Replace with your WhatsApp number
-    const message = `I'm interested in making a payment. Here are the details:\n\nCustomer Name: ${customerName}\nInitial Investment: $${initialInvestment}\nFinal Value: $${finalValue}\nInvestment Duration: ${duration} days`;
+    const message = `I'm interested in making a payment. Here are the details:\n\nCustomer Name: ${customerName}\nInitial Investment: R ${initialInvestment}\nFinal Value: R ${finalValue}\nInvestment Duration: ${duration} days`;
 
     // Construct the WhatsApp URL
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
