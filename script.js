@@ -23,7 +23,7 @@ function makePayment() {
     const customerName = document.getElementById('customerName').value;
 
     const whatsappNumber = '+27843152270'; // Replace with your WhatsApp number
-    const message = `I'm interested in making a payment. Here are the details:\n\nCustomer Name: ${customerName}\nInitial Investment: $${initialInvestment}\nFinal Value: $${finalValue}\nInvestment Duration: ${duration} years`;
+    const message = `I'm interested in making a payment. Here are the details:\n\nCustomer Name: ${customerName}\nInitial Investment: $${initialInvestment}\nFinal Value: $${finalValue}\nInvestment Duration: ${duration} days`;
 
     // Construct the WhatsApp URL
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
