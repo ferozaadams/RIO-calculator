@@ -16,6 +16,9 @@
         <label for="finalValue">Enter Final Investment Value:</label>
         <input type="number" id="finalValue" placeholder="Enter final value" />
 
+        <label for="duration">Enter Investment Duration (in years):</label>
+        <input type="number" id="duration" placeholder="Enter duration" />
+
         <button onclick="calculateROI()">Calculate</button>
 
         <h2 id="result">Return on Investment: 0%</h2>
@@ -23,7 +26,10 @@
 
     <div id="payment-section">
         <h1>Make Payment</h1>
-        <p>Once you are satisfied with the investment calculation, click the button below to proceed with the payment via WhatsApp.</p>
+        <p>Once you are satisfied with the investment calculation, enter your details below and click the button to proceed with the payment via WhatsApp.</p>
+        <label for="customerName">Your Name:</label>
+        <input type="text" id="customerName" placeholder="Enter your name" />
+
         <button onclick="makePayment()">Proceed to Payment</button>
     </div>
 
